@@ -5,21 +5,22 @@ Summary:                        META-package for install PHP
 
 License:                        GPLv3
 
-Requires:                       php73-php
-Requires:                       php73-php-gd
-Requires:                       php73-php-imap
-Requires:                       php73-php-intl
-Requires:                       php73-php-mbstring
-Requires:                       php73-php-mysqlnd
-Requires:                       php73-php-odbc
-Requires:                       php73-php-opcache
-Requires:                       php73-php-pdo
-Requires:                       php73-php-pecl-geoip
-Requires:                       php73-php-pecl-imagick
-Requires:                       php73-php-pecl-memcached
-Requires:                       php73-php-pecl-redis4
-Requires:                       php73-php-pecl-uploadprogress
-Requires:                       php73-php-xml
+Requires:                       remi-release-29
+Requires:                       php
+Requires:                       php-gd
+Requires:                       php-imap
+Requires:                       php-intl
+Requires:                       php-mbstring
+Requires:                       php-mysqlnd
+Requires:                       php-odbc
+Requires:                       php-opcache
+Requires:                       php-pdo
+Requires:                       php-pecl-geoip
+Requires:                       php-pecl-imagick
+Requires:                       php-pecl-memcached
+Requires:                       php-pecl-redis4
+Requires:                       php-pecl-uploadprogress
+Requires:                       php-xml
 
 %description
 META-package for install PHP.
