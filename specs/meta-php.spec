@@ -5,6 +5,8 @@ Summary:                        META-package for install PHP
 
 License:                        GPLv3
 
+Source10:                       php.custom.ini
+
 Requires:                       remi-release-29
 Requires:                       php
 Requires:                       php-gd
@@ -28,6 +30,14 @@ META-package for install PHP.
 # -------------------------------------------------------------------------------------------------------------------- #
 # -----------------------------------------------------< SCRIPT >----------------------------------------------------- #
 # -------------------------------------------------------------------------------------------------------------------- #
+
+%install
+install -p -d -m 0755 %{buildroot}%{_sysconfdir}/php.d
+install -p -m 0644 %{SOURCE10} \
+    %{buildroot}%{_sysconfdir}/php.d/99-php.custom.ini
+
+%files
+%config(noreplace) %{_sysconfdir}/php.d/99-php.custom.conf
 
 %changelog
 * Wed Jan 02 2019 Kitsune Solar <kitsune.solar@gmail.com> - 1.0.0-1
