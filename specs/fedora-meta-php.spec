@@ -30,5 +30,5 @@ META-package for install PHP.
 # -------------------------------------------------------------------------------------------------------------------- #
 
 %changelog
-* Mon Dec 31 2018 Kitsune Solar <kitsune.solar@gmail.com> - 1.0.0-1
+* Wed Jan 02 2019 Kitsune Solar <kitsune.solar@gmail.com> - 1.0.0-1
 - Initial build.
