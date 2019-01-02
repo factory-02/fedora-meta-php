@@ -15,9 +15,9 @@
 [![Patreon](https://cdn-storage.github.io/images/badges/donate.patreon.svg)](https://patreon.com/metadata)
 [![By METADATA](https://cdn-storage.github.io/images/badges/by.metadata.svg)](https://metadata.foundation/)
 
-SPEC-файл для создания RPM-пакета **fedora-meta-php**.
+SPEC-файл для создания RPM-пакета **meta-php**.
 
 ## Установка
 
-1. Подключить репозиторий **METASTORE**: `dnf copr enable metastore/fedora-meta-php`.
-2. Установить пакет: `dnf install fedora-meta-php`.
+1. Подключить репозиторий **METASTORE**: `dnf copr enable metastore/meta-php`.
+2. Установить пакет: `dnf install meta-php`.
