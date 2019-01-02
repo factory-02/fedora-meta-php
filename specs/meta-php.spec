@@ -1,13 +1,12 @@
 Name:                           meta-php
 Version:                        1.0.0
-Release:                        1%{?dist}
+Release:                        2%{?dist}
 Summary:                        META-package for install and configure PHP
 
 License:                        GPLv3
 
 Source10:                       php.custom.ini
 
-Requires:                       remi-release-29
 Requires:                       php
 Requires:                       php-gd
 Requires:                       php-imap
@@ -40,5 +39,8 @@ install -p -m 0644 %{SOURCE10} \
 %config(noreplace) %{_sysconfdir}/php.d/99-php.custom.ini
 
 %changelog
+* Thu Jan 03 2019 Kitsune Solar <kitsune.solar@gmail.com> - 1.0.0-2
+- Remove "remi-release-29" requires.
+
 * Wed Jan 02 2019 Kitsune Solar <kitsune.solar@gmail.com> - 1.0.0-1
 - Initial build.
