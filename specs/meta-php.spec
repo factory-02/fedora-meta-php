@@ -37,7 +37,7 @@ install -p -m 0644 %{SOURCE10} \
     %{buildroot}%{_sysconfdir}/php.d/99-php.custom.ini
 
 %files
-%config(noreplace) %{_sysconfdir}/php.d/99-php.custom.conf
+%config(noreplace) %{_sysconfdir}/php.d/99-php.custom.ini
 
 %changelog
 * Wed Jan 02 2019 Kitsune Solar <kitsune.solar@gmail.com> - 1.0.0-1
