@@ -1,7 +1,7 @@
 Name:                           meta-php
 Version:                        1.0.0
 Release:                        1%{?dist}
-Summary:                        META-package for install PHP
+Summary:                        META-package for install and configure PHP
 
 License:                        GPLv3
 
@@ -25,7 +25,7 @@ Requires:                       php-pecl-uploadprogress
 Requires:                       php-xml
 
 %description
-META-package for install PHP.
+META-package for install and configure PHP.
 
 # -------------------------------------------------------------------------------------------------------------------- #
 # -----------------------------------------------------< SCRIPT >----------------------------------------------------- #
