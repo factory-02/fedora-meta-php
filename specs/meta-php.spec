@@ -2,7 +2,6 @@ Name:                           meta-php
 Version:                        1.0.0
 Release:                        2%{?dist}
 Summary:                        META-package for install and configure PHP
-
 License:                        GPLv3
 
 Source10:                       php.custom.ini
