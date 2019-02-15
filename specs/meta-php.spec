@@ -1,6 +1,6 @@
 Name:                           meta-php
-Version:                        1.0.0
-Release:                        2%{?dist}
+Version:                        1.0.1
+Release:                        1%{?dist}
 Summary:                        META-package for install and configure PHP
 License:                        GPLv3
 
@@ -30,7 +30,7 @@ META-package for install and configure PHP.
 # -------------------------------------------------------------------------------------------------------------------- #
 
 %install
-install -p -d -m 0755 %{buildroot}%{_sysconfdir}/php.d
+%{__mkdir} -p %{buildroot}%{_sysconfdir}/php.d
 install -p -m 0644 %{SOURCE10} \
     %{buildroot}%{_sysconfdir}/php.d/99-php.custom.ini
 
@@ -38,6 +38,9 @@ install -p -m 0644 %{SOURCE10} \
 %config(noreplace) %{_sysconfdir}/php.d/99-php.custom.ini
 
 %changelog
+* Fri Feb 15 2019 Kitsune Solar <kitsune.solar@gmail.com> - 1.0.1-1
+- New version: 1.0.1.
+
 * Thu Jan 03 2019 Kitsune Solar <kitsune.solar@gmail.com> - 1.0.0-2
 - Remove "remi-release-29" requires.
 
